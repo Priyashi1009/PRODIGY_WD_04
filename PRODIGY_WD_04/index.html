@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+    <script src="https://kit.fontawesome.com/30dfa1e004.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="hero" id="home"></section>
+    <a href="#top" class="scroll-button" id="scroll-button">
+        <ion-icon title="Go Up" id="scroll-button-icon" class="scroll-button-icon" name="chevron-up-outline"></ion-icon>
+      </a>
+<div id="header">
+    <div class="container">
+
+    <nav>
+        <img src="images/logop.png" class="logo" >
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Sevices</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    <div class="header-text">
+        <p>Web Developer</p>
+        <h1>Hi,I'm <span>Priyashi Roy</span><br>Welcome to my Portfolio</h1>
+
+    </div>
+
+    </div>
+
+</div>
+
+<!-------------------about---------------------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/pic.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hey there, I'm Priyashi, a passionate third-year B.Tech CSE student at the University of Engineering and Management in Kolkata. With a flair for crafting captivating user experiences, I've dived headfirst into the world of web development. Front-end design is my playground, and I've been known to sprinkle a bit of magic into my full-stack web projects too. When my fingers dance on the keyboard, you'll often find me immersed in code with my favorite tunes playing – because music and coding make the perfect symphony for me. Let's connect, collaborate, and bring digital ideas to life! </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills"> 
+                    <ul>
+                        <li><span>Full Stack Web Development</span><br>Frontend,backend,database management</li>
+                        <li><span>Web Development</span><br>Designing web interfaces</li>
+                    </ul>
+                    </ul>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023-current</span><br>Codsoft Internship on Web Development</li>
+                        <li><span>2023-current</span><br>Bharat Intern Internship</li>
+                        <li><span>2022-curent</span><br>PHP course in udemy</li>
+                        <li><span>2021-2022</span><br>Enhancing Soft skills Personality NPTEL COURSE</li>
+                    </ul>
+                    </ul>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-current</span><br>Btech(Cse) from UEM Kolkata.</li>
+                        <li><span>2021</span><br>12th standard from DAV Dhanbad.</li>
+                        <li><span>2019</span><br>10th standard from DAV Dhanbad.</li>
+                    </ul>
+                    </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------------services------------------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at convallis mi. In euismod placerat leo quis venenatis. Maecenas quis aliquam ex, vel tristique elit.  </p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-stack-overflow"></i>
+                <h2>Full Stack Development</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at convallis mi. In euismod placerat leo quis venenatis. Maecenas quis aliquam ex, vel tristique elit.  </p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-expand"></i>
+                <h2>PHP</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at convallis mi. In euismod placerat leo quis venenatis. Maecenas quis aliquam ex, vel tristique elit.  </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------------------portfolio------------------------------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Landing Page</h3>
+                    <p>Explore our elegantly designed hotel room booking landing page, crafted with HTML and CSS, where style meets functionality for a delightful booking experience.</p>
+                    <a href="https://stayscribe-hotel.netlify.app/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Calculator</h3>
+                    <p>Discover the power of our custom calculator, meticulously crafted with HTML, CSS, and JavaScript, seamlessly combining aesthetics and precision for your everyday calculations.</p>
+                    <a href="https://calculator-bliss.netlify.app/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Blog Site</h3>
+                    <p>Our blog site's layout is thoughtfully designed to capture attention and encourage exploration. Articles are presented in a visually appealing grid, with eye-catching featured images that set the tone for each piece.</p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!-- ----------------------contact--------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>priyashiroy@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/CV.pdf" download class="btn btn2">Download CV</a>
+
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© Priyashi Roy 2023. All Right Reserved.</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+
+    // ----------------sidemenu---------------------
+
+    var side = document.getElementById("sidemenu");
+
+    function openmenu(){
+        side.style.right ="0";
+    }
+    function closemenu(){
+        side.style.right="-200px";
+    }
+
+</script>
+
+<!-- ==============contactmeinfo=================== -->
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxGnfpgdBwSyxMBFwj3luFZ26GboGNP6MS4wksYvLg9pCl7VlRMG0akXgHpJu9ARRWB/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="I got your Message! Thanks!"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+
+
+</body>
+<script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+</html>
